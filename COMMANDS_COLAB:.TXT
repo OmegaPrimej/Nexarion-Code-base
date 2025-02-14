@@ -1,0 +1,21 @@
+.**CORRECTED COMMANDS FOR COLAB:**
+You were close, just needed to split the commands into separate lines and remove the backslashes (\) except where necessary for line continuation. Here are the corrected commands for Colab:
+```python
+!git clone https://github.com/OmegaPrimej/Nexarion-Code-base.git
+!pip install -r requirements.txt
+!pip install pandas numpy scikit-learn matplotlib seaborn torch torchvision tensorflow keras scipy plotly cufflinks openpyxl xlrd catboost lightgbm xgboost pytorch-lightning mlflow opencv-python pandas-profiling scikit-image yellowbrick imbalanced-learn transformers sentence-transformers gensim spacy nltk python-gitlab gitpython neuroevolution deep-neuroevolution meta-learn
+```
+Or, to make it more readable:
+```python
+!git clone https://github.com/OmegaPrimej/Nexarion-Code-base.git
+!pip install -r requirements.txt
+!pip install \
+  pandas numpy scikit-learn matplotlib seaborn \
+  torch torchvision tensorflow keras scipy plotly \
+  cufflinks openpyxl xlrd catboost lightgbm xgboost \
+  pytorch-lightning mlflow opencv-python pandas-profiling \
+  scikit-image yellowbrick imbalanced-learn transformers \
+  sentence-transformers gensim spacy nltk python-gitlab \
+  gitpython neuroevolution deep-neuroevolution meta-learn
+```
+Run these commands in your Colab notebook, and it should work as expected!
